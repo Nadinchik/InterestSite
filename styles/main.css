@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    padding: 0 215px;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: Ubuntu-Regular;
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.header__auth {
+    justify-content: space-between;
+}
+
+.header__auth,
+.select__item,
+.login__list {
+    height: 50px;
+    font-family: Ubuntu-Medium;
+    font-size: 14px;
+    color: #FFF;
+    background: #3B3B3B;
+}
+
+.select__item {
+    width: 100px;
+    margin-right: -4px;
+    border: 0.1px solid #AAA;
+}
+
+.login__list {
+    padding: 17px 29.99px;
+    text-transform: uppercase;
+    border: 1px solid #AAA;
+}
+
+.login__li {
+    float: left;
+    text-align: center;
+    margin-right: 10.88px;
+}
+
+.login__li:last-child {
+    margin-right: 0;
+}
+
+.login__li a:hover {
+    color: #1b6d85;
+}
+
+.login__list a {
+    color: #FFF;
+}
+
+.login__li span {
+    color: #AAA;
+}
+
+.header__nav {
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+.nav__list {
+    justify-content: flex-end;
+    height: 30px;
+    text-transform: uppercase;
+}
+
+.nav__list li {
+    padding-right: 60px;
+}
+
+.nav__list li:last-child {
+    padding-right: 0;
+}
