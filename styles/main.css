@@ -74,13 +74,14 @@ html {
 }
 
 body {
-    font: 14px Ubuntu-Regular;
+    font-family: Ubuntu-Regular;
     min-height: 100%;
     height: 100%;
     position: relative;
 }
 
 .header__auth {
+    position: relative;
     justify-content: space-between;
 }
 
@@ -88,7 +89,8 @@ body {
 .select__item,
 .login__list {
     height: 50px;
-    font: 14px Ubuntu-Medium;
+    font-family: Ubuntu-Medium;
+    font-size: 14px;
     color: #FFF;
     background: #3B3B3B;
 }
@@ -99,7 +101,15 @@ body {
     border: 0.1px solid #AAA;
 }
 
+.header__select select {
+    text-align-last: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .login__list {
+    position: relative;
     padding: 17px 29.13px 17px 35px;
     text-transform: uppercase;
     border: 1px solid #AAA;
@@ -133,6 +143,8 @@ body {
 }
 
 .nav__list {
+    position: relative;
+    /* padding-right: 3px;*/
     justify-content: flex-end;
     font-size: 14px;
     text-transform: uppercase;
@@ -154,7 +166,7 @@ body {
 }
 
 .nav__list li:first-child {
-    padding-right: 60.1px;
+    padding-right: 59.25px;
 }
 
 .nav__list li:nth-child(2) {
@@ -183,6 +195,7 @@ body {
 
 .navigation__rooms {
     padding-top: 30.57px;
+    position: relative;
     font: 14px Ubuntu-Regular;
     text-transform: uppercase;
 }
@@ -232,6 +245,7 @@ body {
 .header__seeAll {
     height: 651px;
     width: 1600px;
+    position: relative;
     justify-content: center;
     background: url('../images/header__background.png') no-repeat;
     background-position-y: 100%;
@@ -253,9 +267,10 @@ body {
 }
 
 .btn__seeAll {
+    position: relative;
     width: 250px;
     height: 50px;
-    padding-top: 1px;
+    padding-bottom: 2px;
     font: 16px Ubuntu-Bold;
     text-transform: uppercase;
     color: #FFF;
@@ -263,3 +278,38 @@ body {
     background: linear-gradient(90deg, #4AB6B6, #45CCCC);
 }
 
+.btn__seeAll:hover {
+    background: linear-gradient(90deg, #2d85bf, #3aafbf);
+}
+
+.caption{
+    padding-top: 40.35px;
+    font: 36px Ubuntu-Bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3A3A3A;
+}
+
+.caption span{
+    color: #3aafbf;
+}
+
+.main__list__products{
+    position: relative;
+    padding-top: 35.65px;
+}
+
+.list__products span{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.item__product{
+    display: flex;
+
+}
+
+.item__product span{
+
+}
