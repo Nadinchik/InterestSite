@@ -242,6 +242,34 @@ body {
     padding-right: 10.22px;
 }
 
+.room__li img:first-child{
+    height: 26px;
+    width: 30px;
+}
+
+.room__li img:nth-child(2){
+    height: 30px;
+    width: 32.14px;
+}
+
+.room__li img:nth-child(3){
+    height: 23px;
+    width: 40px;
+}
+.room__li img:nth-child(4){
+    height: 28px;
+    width: 30px;
+}
+.room__li img:nth-child(5){
+    height: 28px;
+    width: 30px;
+}
+.room__li img:nth-child(6){
+    height: 30px;
+    width: 30px;
+}
+
+
 .header__seeAll {
     height: 651px;
     width: 1600px;
