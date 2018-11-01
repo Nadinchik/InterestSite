@@ -557,18 +557,20 @@ body {
     flex-direction: column;
 }
 
-#player{
+#player .plyr__control .plyr__control--overlaid{
     position: relative;
-    width: 780px;
-    height: 360px;
-    margin-right: 20px;
+
 }
 
-#player button.plyr__control .plyr__control--overlaid{
-    background: url("../images/play.png");
+
+.videos__project .plyr__video-wrapper{
+    width: 780px; !important;
+    height: 360px; !important;
+    margin-right: 20px; !important;
+
 }
 
-#player .plyr .plyr--full-ui .plyr--video .plyr--html5 .plyr--paused .plyr--stopped .plyr--pip-supported .plyr--fullscreen-enabled .plyr__poster-enabled{
-    width: 780px;
-    height: 360px;
+.videos__project .plyr__controls{
+    width: 500px; !important;
+    height: 360px; !important;
 }
