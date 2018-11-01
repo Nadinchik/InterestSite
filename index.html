@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.3.22/plyr.css">
 </head>
 <body>
 <wrapper>
@@ -62,34 +63,233 @@
         <div class="header__seeAll flex">
             <div class="title__seeAll flex">
                 <h1>Find your dream interior</h1>
-                <button class="btn__seeAll">See all</button>
+                <button class="btn__seeAll btn__saw">See all</button>
             </div>
         </div>
     </div>
     <div class="main">
-        <div class="container">
-            <div class="our__product">
-                <div class="caption"><span>Our</span> products</div>
-                <div class="main__list__products flex">
-                    <ul class="list__products flex">
-                        <li class="item__product"><a href="#"><img src="images/all.png"><span>ALL</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/furniture.png"><span>FURNITURE</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/bathroom.png"><span>BATHROOM</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/light.png"><span>LIGHTING</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/accessorias.png"><span>ACCESSORIES</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/dishes.png"><span>DISHES</span></a></li>
-                        <li class="item__product"><a href="#"><img src="images/textile.png"><span>TEXTILE</span></a></li>
+        <div class="our__product">
+            <div class="caption">
+                <div class="container">
+                    <span>Our</span> products
+                </div>
+            </div>
+            <div class="main__menu__products flex">
+                <div class="container">
+                    <ul class="category__products flex">
+                        <li class="item__category"><a href="#" class="active"><img src="images/all.png"><span>ALL</span></a>
+                        </li>
+                        <li class="item__category"><a href="#"><img
+                                src="images/furniture.png"><span>FURNITURE</span></a></li>
+                        <li class="item__category"><a href="#"><img src="images/bathroom.png"><span>BATHROOM</span></a>
+                        </li>
+                        <li class="item__category"><a href="#"><img src="images/light.png"><span>LIGHTING</span></a>
+                        </li>
+                        <li class="item__category"><a href="#"><img
+                                src="images/accessorias.png"><span>ACCESSORIES</span></a></li>
+                        <li class="item__category"><a href="#" class="hover"><img
+                                src="images/dishes.png"><span>DISHES</span></a></li>
+                        <li class="item__category"><a href="#"><img src="images/textile.png"><span>TEXTILE</span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
+            <div class="main__list_ourProduct">
+                <div class="container">
+                    <div class="list__ourProduct flex">
+                        <div class="item__ourProduct">
+                            <img src="images/soft.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Soft Home Chair</p>
+                            <span>$45</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/metal.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Metal pyramid lamp</p>
+                            <span>$25</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/mellon.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/star.png">
+                            </div>
+                            <p>Mellon soft pillow</p>
+                            <span>$10</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/mini.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/stardisactive.png"><img
+                                    src="images/stardisactive.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Mini Metal Retro Alarm</p>
+                            <span>$5</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/triangular.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/star.png">
+                            </div>
+                            <p>Triangular wooden shelf</p>
+                            <span>$20</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/bath.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/stardisactive.png"><img
+                                    src="images/stardisactive.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Soft bath mat</p>
+                            <span>$25</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/soup.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Soup beige plate</p>
+                            <span>$3</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/polygonal.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/stardisactive.png">
+                            </div>
+                            <p>Polygonal ceramic vase</p>
+                            <span>$20</span>
+                            <button>BUY NOW</button>
+                        </div>
+                        <div class="item__ourProduct">
+                            <img src="images/green.png" class="big">
+                            <div class="icon">
+                                <img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img
+                                    src="images/star.png"><img src="images/star.png">
+                            </div>
+                            <p>Bean bag chair green</p>
+                            <span>$55</span>
+                            <button>BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="button__saw flex">
+                        <button class="btn__saw btn__seeMore">See more</button>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="new__arrivals">
+            <div class="caption">
+                <div class="container">
+                    <span>New</span> arrivals
+                </div>
+            </div>
+            <div class="list__arrivals">
+                <div class="container">
+                    <div class="arrival__box box1">
+                        <p>Soft blue chair</p>
+                        <span>$65</span>
+                    </div>
+                    <div class="arrival__box box2">
+                        <p>Bathroom set</p>
+                        <span>$15</span>
+                    </div>
+                    <div class="arrival__box box3">
+                        <p>Metal Lamp</p>
+                        <span>$5</span>
+                    </div>
+                    <div class="arrival__box box4">
+                        <p>Wood Wall Clock</p>
+                        <span>$15</span>
+                    </div>
+                    <div class="arrival__box box5">
+                        <p>Whistling kettle</p>
+                        <span>$25</span>
+                    </div>
+                    <div class="arrival__box box6">
+                        <p>Stripped bed linen</p>
+                        <span>$7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="button__saw flex">
+                    <button class="btn__saw btn__seeMore">See more</button>
+                </div>
+            </div>
+        </div>
+        <div class="main__our__project">
+            <div class="container">
+                <div class="caption">
+                    <span>Our</span> projects
+                </div>
+                <div class="videos__project flex">
+                        <video poster="images/video.png" id="player" playsinline controls>
+                            <source src="video/video.mp4" type="video/mp4">
+                        </video>
+                    <div class="video__review flex">
+                        <div class="video__1 flex"><img src="images/play.png"></div>
+                        <div class="video__2 flex"><img src="images/play.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-
-
     <div class="footer">
     </div>
 
 </wrapper>
 
+<script src="https://cdn.plyr.io/3.4.6/plyr.js"></script>
+<script>
+    const player = new Plyr('#player', {
+    type: 'video',
+    title: 'Example title',
+    sources: [
+        {
+            src: 'v',
+            type: 'video/mp4',
+            size: 780,
+        },
+    ],
+    poster: 'images/video.png',
+    tracks: [
+        {
+            kind: 'captions',
+            label: 'English',
+            srclang: 'en',
+            src: '/path/to/captions.en.vtt',
+            default: true,
+        },
+        {
+            kind: 'captions',
+            label: 'French',
+            srclang: 'fr',
+            src: '/path/to/captions.fr.vtt',
+        },
+    ],
+});
+player.play();
+</script>
 </body>
 </html>
