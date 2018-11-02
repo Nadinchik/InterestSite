@@ -625,3 +625,47 @@ body {
 .comment img{
     margin-right: 6px;
 }
+
+.author__comment{
+    display: flex;
+
+}
+
+.block__comments{
+    position: relative;
+    width: 800px;
+    height: 40px;
+    margin: 30px 0 30px 0;
+    padding: 14px 14px 20px;
+    font: 11px Ubuntu-Medium;
+    background: #F0F0F0;
+}
+
+.block__comments img{
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    top: 18px;
+    right: 20px;
+}
+
+.author__comment img{
+    position: relative;
+    margin-right: 30px;
+}
+
+.author__comment h3{
+    font: 14px Ubuntu-Light;
+    font-weight: bold;
+    margin-bottom: 10.85px;
+    color: #3B3B3B;
+}
+
+.author__comment span{
+    margin-left: 15px;
+    color: #8B8B8B
+}
+
+.author__comment p{
+    margin-bottom: 10.15px;
+}
