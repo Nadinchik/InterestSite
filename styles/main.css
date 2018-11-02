@@ -531,7 +531,7 @@ body {
 }
 
 .videos__project{
-    margin-top: 30.65px;
+    margin-top: 32.65px;
     padding: 20px;
     background: #F0F0F0;
 }
@@ -557,11 +557,10 @@ body {
     flex-direction: column;
 }
 
-#player .plyr__control .plyr__control--overlaid{
-    position: relative;
-
+.video__review img{
+    width: 70px;
+    height: 70px;
 }
-
 
 .videos__project .plyr__video-wrapper{
     width: 780px; !important;
@@ -571,6 +570,10 @@ body {
 }
 
 .videos__project .plyr__controls{
-    width: 500px; !important;
-    height: 360px; !important;
+  width: 740px; !important;
+}
+.videos__project .plyr__control--overlaid{
+    width: 90px; !important;
+    height: 90px; !important;
+    background: url("../images/play.png") transparent; !important;
 }
