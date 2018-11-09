@@ -20,7 +20,7 @@
 
 @font-face {
     font-family: Lato-Regular;
-    src: url("../fonts/Lato-Regulart.ttf");
+    src: url("../fonts/Lato-Regular.ttf");
 }
 
 * {
@@ -42,16 +42,6 @@ ul, li {
     list-style: none;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 .flex {
     display: flex;
 }
@@ -61,20 +51,23 @@ ul, li {
 }
 
 .container {
-    padding: 0 455px 0 215px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 215px;
 }
 
 html {
     height: 100%;
     min-height: 100%;
     position: relative;
+    overflow-x: hidden;
 }
 
 body {
-    font-family: Ubuntu-Regular;
-    min-height: 100%;
-    height: 100%;
     position: relative;
+    height: 100%;
+    font-family: 'Ubuntu-Regular', sans-serif;
+    overflow-x: hidden;
     color: #3B3B3B;
 }
 
@@ -87,7 +80,7 @@ body {
 .select__item,
 .login__list {
     height: 50px;
-    font-family: Ubuntu-Medium;
+    font-family: 'Ubuntu-Medium', sans-serif;
     font-size: 14px;
     color: #FFF;
     background: #3B3B3B;
@@ -101,9 +94,9 @@ body {
 
 .header__select select {
     text-align-last: center;
-    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
 }
 
 .login__list {
@@ -166,7 +159,7 @@ body {
 }
 
 .nav__list a.active {
-    font-family: Ubuntu-Bold;
+    font-family: 'Ubuntu-Bold', sans-serif;
     color: #4AB6B6;
 }
 
@@ -203,7 +196,7 @@ body {
 .navigation__rooms {
     padding-top: 30.57px;
     position: relative;
-    font: 14px Ubuntu-Regular;
+    font: 14px 'Ubuntu-Regular';
     text-transform: uppercase;
 }
 
@@ -231,9 +224,7 @@ body {
     margin-top: 4px;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #EBEBEB;
-    border-left: 1px solid #EBEBEB;
-    border-right: 1px solid #EBEBEB;
+    border: 1px solid #EBEBEB;
 }
 
 .room__li a {
@@ -246,7 +237,7 @@ body {
 }
 
 .room__li a.active {
-    font-family: Ubuntu-Medium;
+    font-family: 'Ubuntu-Medium', sans-serif;
     color: #fff;
     border: none;
 }
@@ -260,8 +251,9 @@ body {
 }
 
 .header__seeAll {
+    max-width: 1600px;
+    width: 100%;
     height: 651px;
-    width: 1600px;
     position: relative;
     justify-content: center;
     background: url('../images/header__background.png') no-repeat;
@@ -277,7 +269,7 @@ body {
 
 .title__seeAll h1 {
     padding-bottom: 30.03px;
-    font: 36px Ubuntu-Light;
+    font: 36px 'Ubuntu-Light';
     text-transform: uppercase;
     letter-spacing: 7px;
     color: #FFF;
@@ -293,7 +285,7 @@ body {
     height: 50px;
     padding-right: 4px;
     padding-bottom: 4px;
-    font: 16px Ubuntu-Bold;
+    font: 16px 'Ubuntu-Bold';
     text-transform: uppercase;
     color: #FFF;
     border: none;
@@ -306,7 +298,7 @@ body {
 .caption {
     position: relative;
     padding-top: 40.35px;
-    font: 36px Ubuntu-Bold;
+    font: 36px 'Ubuntu-Bold';
     text-align: center;
     text-transform: uppercase;
     color: #3A3A3A;
@@ -319,7 +311,7 @@ body {
 .main__menu__products {
     position: relative;
     padding-top: 37px;
-    font: 14px Ubuntu-Regular;
+    font: 14px 'Ubuntu-Regular';
     color: #3B3B3B;
     justify-content: center;
 }
@@ -344,10 +336,11 @@ body {
 
 .category__products {
     align-items: center;
+    justify-content: center;
 }
 
 .category__products a.active {
-    font-family: Ubuntu-Bold, sans-serif;
+    font-family: 'Ubuntu-Bold', sans-serif;
     color: #4AB6B6;
 }
 
@@ -390,9 +383,9 @@ body {
 
 .list__ourProduct {
     position: relative;
-    width: 1170px;
+    max-width: 1170px;
     flex-wrap: wrap;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
 }
 
 .item__ourProduct:nth-child(3n) {
@@ -405,7 +398,7 @@ body {
 
 .arrival__box p,
 .item__ourProduct p {
-    font: 18px Ubuntu-Regular;
+    font: 18px 'Ubuntu-Regular';
     color: #3A3A3A;
 }
 
@@ -428,7 +421,7 @@ body {
 
 .arrival__box span,
 .item__ourProduct span {
-    font: 30px Ubuntu-Bold;
+    font: 30px 'Ubuntu-Bold';
 }
 
 .item__ourProduct span {
@@ -436,7 +429,7 @@ body {
 }
 
 .item__ourProduct .big {
-    padding: 20px 20px 14px 20px;
+    padding: 20px 20px 14px;
 }
 
 .icon {
@@ -460,7 +453,7 @@ body {
     position: absolute;
     top: 418px;
     left: 240px;
-    font: 14px Ubuntu-Bold;
+    font: 14px 'Ubuntu-Bold';
     color: #FFFFFF;
     background: #3B3B3B;
     border: none;
@@ -488,6 +481,7 @@ body {
 .list__arrivals > div {
     position: relative;
     display: grid;
+    max-width: 1170px;
     padding-top: 28.65px;
     grid-template-columns: 270px 270px 570px;
     grid-template-rows: 270px 270px 270px;
@@ -634,22 +628,27 @@ body {
 
 .main__our__project h2 {
     margin-top: 30.42px;
-    font: 16px Ubuntu-Bold;
+    font: 16px 'Ubuntu-Bold';
     text-transform: uppercase;
 }
 
-.project__status {
-    margin-top: 12.58px;
-    font: 14px Lato-Regular;
+.project__status,
+.blog__activity{
+    font-family: 'Lato-Regular',sans-serif;
+    font-size: 14px;
     color: #8B8B8B;
 }
 
+.project__status{
+    margin-top: 12.58px;
+}
+
 .project__status div:first-child {
-    margin-right: 36px;
+    margin-right: 32px;
 }
 
 .project__status div:nth-child(2) {
-    margin-right: 33px;
+    margin-right: 28px;
 }
 
 .project__status div:last-child {
@@ -657,11 +656,11 @@ body {
 }
 
 .likes img {
-    margin-right: 7.5px;
+    margin-right:6px;
 }
 
 .comment img {
-    margin-right: 6px;
+    margin-right: 8px;
 }
 
 .block__comments {
@@ -669,8 +668,8 @@ body {
     width: 800px;
     height: 40px;
     margin: 30px 0 30px 0;
-    padding: 14px 14px 20px;
-    font: 11px Ubuntu-Medium;
+    padding: 13px 20px 20px;
+    font: 11px 'Ubuntu-Medium';
     background: #F0F0F0;
 }
 
@@ -682,60 +681,64 @@ body {
     right: 20px;
 }
 
+.author__list{
+    position: relative;
+    max-width: 1170px;
+    flex-direction: column;
+    margin-top: 28px;
+    color: #020202;
+}
+
 .author__comment {
     position: relative;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 38.55px;
 }
 
 .author__comment:last-child{
-    margin-bottom: 40.55px;
+    margin-top: -1.6px;
 }
 
 .author__comment img {
-    position: relative;
     width: 70px;
     height: 70px;
     margin-right: 30px;
 }
 
 .author__comment h3 {
-    font: 14px Ubuntu-Bold;
-    margin-bottom: 10.85px;
+    font: 14px 'Ubuntu-Bold';
+    margin-bottom: 8px;
     color: #3B3B3B;
 }
 
 .author__comment span {
-    font: 14px Ubuntu-Light;
+    font: 14px 'Ubuntu-Light';
     margin-left: 15px;
     color: #8B8B8B
 }
 
 .author__comment p {
-    position: relative;
     font-size: 14px;
-    margin-bottom: 10.15px;
-}
-
-.author__comment .content__comment:nth-child(2) {
-    height: 56px;
-}
-
-.content__comment a:nth-child(2){
-    margin-bottom: 40.55px;
+    margin-bottom: 1px;
+    letter-spacing: 0;
 }
 
 .author__comment a {
-    font: 14px Ubuntu-Bold;
+    font: 14px 'Ubuntu-Bold';
     color: #4AB6B6;
 }
 
+.author__comment{
+    position: relative;
+    line-height: 1.5;
+}
+
 .textarea__project > textarea {
+    position: relative;
     width: 800px;
     height: 95px;
     padding: 20px 20px 19px;
-    font: 14px Ubuntu-Light;
+    font: 14px 'Ubuntu-Light';
     color: #8D8C8D;
     resize: none;
     background: rgb(141, 140, 141, 0.2);
@@ -745,16 +748,26 @@ body {
 }
 
 .pagination {
-    margin-top: 30.45px;
+    position: relative;
+    margin-top: 27.45px;
 }
 
-.pagination ul li {
+.pagination ul li{
+    position: center;
     float: left;
-    margin-right: 14px;
+    margin-right: 17px;
+}
+
+.pagination ul li:nth-child(5){
+    margin-right: 19px;
+}
+
+.pagination ul li:last-child{
+    margin-right: 0;
 }
 
 .pagination ul a {
-    font: 14px Ubuntu-Regular;
+    font: 14px 'Ubuntu-Regular';
     color: #3B3B3B;
 }
 
@@ -765,6 +778,10 @@ body {
 
 .pagination ul a:hover {
     color: #4AB6B6;
+}
+
+.main__our__blog .caption p{
+    margin-top: 6px;
 }
 
 .blogs__item {
@@ -781,9 +798,13 @@ body {
 }
 
 .blogs__item h2 {
-    padding: 20px 0 14px 0;
-    font: 18px Ubuntu-Bold;
+    padding: 16px 0 14px 0;
+    font: 18px 'Ubuntu-Bold';
     color: #3B3B3B;
+}
+
+.blog__activity{
+    margin-left: -2px;
 }
 
 .blog__activity .likes {
@@ -794,9 +815,9 @@ body {
     position: relative;
     width: 150px;
     height: 40px;
-    margin-top: 17px;
+    margin-top: 14px;
     padding: 12px 33px;
-    font: 14px Ubuntu-Bold;
+    font: 14px 'Ubuntu-Bold';
     text-transform: uppercase;
     color: #FFF;
     background: #3B3B3B;
@@ -808,32 +829,58 @@ body {
 }
 
 .footer__about__block {
+    position: relative;
     margin-top: 40.65px;
 }
 
+.footer__about__us .caption{
+    position: relative;
+    padding-top: 65.35px;
+}
+
 .footer__map {
+    position: relative;
     width: 985px;
     height: 300px;
 }
 
+.footer__map a{
+    position: absolute;
+    display: flex;
+    font: 18px 'Ubuntu-Bold';
+    top: 50px;
+    left: 514px;
+}
+
+.footer__map a > img{
+    width: 18.75px;
+    height: 25px;
+    margin-right: 10.25px;
+}
+
 .footer__contacts {
     padding: 63px 0 62.74px 67px;
-    font: 15px Ubuntu-Medium;
+    font: 15px 'Ubuntu-Medium';
     color: #3B3B3B
 }
 
 .logo__mini {
     width: 200px;
     height: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .contact__data li {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     white-space: nowrap;
 }
 
+.contact__data li:nth-child(2){
+    margin-bottom: 25px;
+}
+
 .contact__data li:last-child {
+    margin-left: -3px;
     margin-bottom: 0;
 }
 
@@ -842,7 +889,8 @@ body {
 }
 
 .footer__social {
-    min-width: 100%;
+    position: relative;
+    min-width: 1200px;
     height: 98px;
     justify-content: flex-end;
     align-items: center;

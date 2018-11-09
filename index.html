@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdn.plyr.io/3.3.22/plyr.css">
 </head>
 <body>
-<wrapper>
+<div class="wrapper">
     <div class="header">
         <div class="header__auth container flex">
             <div class="header__select">
                 <select size="1" class="select__item">
-                    <option>USD</option>
+                    <option>USD &#9662</option>
                 </select>
                 <select size="1" class="select__item">
-                    <option>ENG</option>
+                    <option>ENG &#9662</option>
                 </select>
             </div>
             <div class="header__login">
@@ -48,7 +48,8 @@
         <div class="navigation__rooms">
             <div class="container">
                 <ul class="rooms__item flex">
-                    <li class="room__li active"><a href="#" class="active"><img src="images/header_bedroom.png"><span>Bedroom</span></a>
+                    <li class="room__li active"><a href="#" class="active"><img
+                            src="images/header_bedroom.png"><span>Bedroom</span></a>
                     </li>
                     <li class="room__li"><a href="#"><img src="images/header_bath.png"><span>Bathroom</span></a></li>
                     <li class="room__li"><a href="#"><img src="images/header_living.png"><span>Living room</span></a>
@@ -70,12 +71,12 @@
     <div class="main">
         <div class="our__product">
             <div class="container">
-            <div class="caption">
+                <div class="caption">
                     <span>Our</span> products
+                </div>
             </div>
-
-            <div class="main__menu__products flex">
-
+            <div class="main__menu__products">
+                <div class="container">
                     <ul class="category__products flex">
                         <li class="item__category"><a href="#" class="active"><img src="images/all.png"><span>ALL</span></a>
                         </li>
@@ -92,8 +93,9 @@
                         <li class="item__category"><a href="#"><img src="images/textile.png"><span>TEXTILE</span></a>
                         </li>
                     </ul>
+                </div>
             </div>
-            </div>
+
             <div class="main__list_ourProduct">
                 <div class="container">
                     <div class="list__ourProduct flex">
@@ -199,7 +201,7 @@
         <div class="new__arrivals">
             <div class="caption">
                 <div class="container">
-                    <span>New</span> arrivals
+                    <p><span>New</span> arrivals</p>
                 </div>
             </div>
             <div class="list__arrivals">
@@ -239,7 +241,7 @@
         <div class="main__our__project">
             <div class="container">
                 <div class="caption">
-                    <span>Our</span> projects
+                    <p><span>Our</span> projects</p>
                 </div>
                 <div class="videos__project flex">
                     <video poster="images/video.png" id="player" preload="none" controls>
@@ -261,30 +263,32 @@
                         <p>15 comments</p>
                         <img src="images/arrow-up.png">
                     </div>
-                    <div class="author__comment">
-                        <img src="images/Tyler.png" class="">
-                        <div class="content__comment">
-                            <h3>Tyler Warren<span> 10:45, 8 Apr 17</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Thanks, Tyler W.</p>
-                            <a href="#">Reply</a>
+                    <div class="author__list flex">
+                        <div class="author__comment">
+                            <img src="images/Tyler.png" class="">
+                            <div class="content__comment">
+                                <h3>Tyler Warren<span> 10:45, 8 Apr 17</span></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Thanks, Tyler W.</p>
+                                <a href="#">Reply</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="author__comment">
-                        <img src="images/Cara.png" class="flex">
-                        <div class="content__comment">
-                            <h3>Cara Taylor<span> 11:24, 8 Apr 17</span></h3>
-                            <p>The comment above by Tyler encouraged me to add a сlass aptent taciti sociosqu ad
-                                litora torquent per conubia<br> nostra, per inceptos ut magna consequat ex interdum
-                                himenaeos. Vestibulum ut magna consequat ex interdum<br> ullamcorper egetnon turpis.</p>
-                            <a href="#">Reply</a>
+                        <div class="author__comment">
+                            <img src="images/Cara.png" class="flex">
+                            <div class="content__comment">
+                                <h3>Cara Taylor<span> 11:24, 8 Apr 17</span></h3>
+                                <p>The comment above by Tyler encouraged me to add a сlass aptent taciti sociosqu ad
+                                    litora torquent per conubia<br> nostra, per inceptos ut magna consequat ex interdum
+                                    himenaeos. Vestibulum ut magna consequat ex interdum<br> ullamcorper egetnon turpis.</p>
+                                <a href="#">Reply</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="author__comment">
-                        <img src="images/Mathew.png" class="flex">
-                        <div class="content__comment">
-                            <h3>Mathew McDonald<span> 16:16, 8 Apr 17</span></h3>
-                            <p>Sed efficitur sodales tortor ut sollicitudin.</p>
-                            <a href="#">Reply</a>
+                        <div class="author__comment">
+                            <img src="images/Mathew.png" class="flex">
+                            <div class="content__comment">
+                                <h3>Mathew McDonald<span> 16:16, 8 Apr 17</span></h3>
+                                <p>Sed efficitur sodales tortor ut sollicitudin.</p>
+                                <a href="#">Reply</a>
+                            </div>
                         </div>
                     </div>
                     <div class="textarea__project">
@@ -292,7 +296,7 @@
                     </div>
                 </div>
                 <div class="pagination">
-                    <ul class="clearfix">
+                    <ul class="pagination__list">
                         <li><a href="#">Prev</a></li>
                         <li><a href="#">2</a></li>
                         <li class="active"><a href="#">3</a></li>
@@ -337,11 +341,10 @@
                         <button class="btn__read">READ MORE</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-</wrapper>
+</div>
 
 <div class="footer">
     <div class="footer__about__us">
@@ -353,11 +356,12 @@
         <div class="footer__about__block flex">
             <div class="footer__map">
                 <img src="images/map.png">
+                <a href="#"><img src="images/ic-map.png">35 Cedar Avenue, Pasadena, California</a>
             </div>
             <div class="footer__contacts">
                 <div class="logo__mini"><img src="images/logo.png"></div>
                 <ul class="contact__data">
-                    <li><img src="images/ic-map.png">35 Cedar Avenue, Pasadena, California</li>
+                    <li><img src="images/ic-map.png">35 Cedar Avenue, Pasadena</li>
                     <li><img src="images/ic-call.png">8101408138659</li>
                     <li><img src="images/ic-email.png">interest-shop@gmail.com</li>
                 </ul>
