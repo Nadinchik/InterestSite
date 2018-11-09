@@ -286,7 +286,7 @@ body {
 
 .title__seeAll h1 {
     position: relative;
-    padding-bottom: 30.03px;
+    padding-bottom: 28.03px;
     font: 36px 'Ubuntu-Light';
     text-transform: uppercase;
     letter-spacing: 7.2px;
@@ -926,16 +926,13 @@ body {
     margin-right: 10.75px;
 }
 
-.footer__social {
+.footer__social ul{
     position: relative;
     min-width: 1200px;
     height: 98px;
-    background: #3B3B3B;
-}
-
-.footer__social ul{
     justify-content: flex-end;
     align-items: center;
+    background: #3B3B3B;
 }
 
 .social__list{
