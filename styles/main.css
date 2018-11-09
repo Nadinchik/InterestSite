@@ -66,7 +66,6 @@ body {
     position: relative;
     height: 100%;
     font-family: 'Ubuntu-Regular', sans-serif;
-    overflow-x: hidden;
     color: #3B3B3B;
 }
 
@@ -399,11 +398,6 @@ body {
     flex-wrap: wrap;
     margin: 30px 0;
 }
-@media (max-width: 1440px){
-    .list__ourProduct{
-        min-width: 1440px;
-    }
-}
 
 .arrival__box p,
 .item__ourProduct p {
@@ -415,14 +409,8 @@ body {
     width: 370px;
     height: 480px;
     position: relative;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin: 0 30px 30px 0;
     background: #F6F6F6;
-}
-@media (max-width: 1440px){
-    .item__ourProduct{
-        margin-right: 20px;
-    }
 }
 
 .item__ourProduct:nth-child(3n) {
